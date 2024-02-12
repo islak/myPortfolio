@@ -1,38 +1,252 @@
-.App {
+/* App.css */
+
+
+.Landing {
+  background-color: #f7f7f7;
+  padding: 80px 0;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.Landing-content {
+  max-width: 800px;
+  margin: 0 auto;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.Landing h1 {
+  font-size: 2.5em;
+  color: #333;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
+.Landing p {
+  font-size: 1.2em;
+  color: #555;
+}
+
+.Landing button {
+  display: inline-block;
+  margin-top: 20px;
+  font-size: 1.1em;
+  text-decoration: none;
+  color: #fff;
+  background-color: #007BFF;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.Landing button:hover {
+  background-color: #0056b3;
+}
+
+.Landing .social-buttons {
+  margin-top: 20px;
+}
+
+.Landing button.github-button,
+.Landing button.linkedin-button {
+  display: inline-flex;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  margin-right: 20px;
+  font-size: 1.1em;
+  text-decoration: none;
+  color: #fff;
+  background-color: #007BFF;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
 }
 
-.App-link {
-  color: #61dafb;
+.Landing button.github-button:hover,
+.Landing button.linkedin-button:hover {
+  background-color: #0056b3;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+
+.header {
+  background-color: #fff;
+  color: rgb(0, 0, 0);
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
+
+.logo {
+  font-size: 1.5em;
+}
+
+nav ul {
+  list-style-type: none;
+  display: flex;
+}
+
+nav ul li {
+  margin-right: 20px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 1.1em;
+  transition: color 0.3s;
+}
+
+nav ul li a:hover {
+  color: #007BFF;
+}
+
+/* Add these styles to your existing CSS file or add a new CSS file */
+.nav-button {
+  background-color: #007BFF;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1.1em;
+  margin-right: 20px;
+  transition: background-color 0.3s;
+}
+
+.nav-button:hover {
+  background-color: #0056b3;
+}
+
+
+
+
+/* Add styles for other sections as needed */
+.about-me {
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+
+.about-me h2 {
+  font-size: 2em;
+  color: #333;
+}
+
+.about-me p {
+  font-size: 1.2em;
+  color: #555;
+  line-height: 1.6;
+}
+
+
+.contact {
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+
+.contact h2 {
+  font-size: 2em;
+  color: #333;
+}
+
+.contact p {
+  font-size: 1.2em;
+  color: #555;
+  margin-bottom: 20px;
+}
+
+.contact form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.contact label {
+  font-size: 1.1em;
+  color: #333;
+}
+
+.contact input,
+.contact textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1em;
+  margin-bottom: 15px;
+}
+
+.contact button {
+  background-color: #007BFF;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 1.1em;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.contact button:hover {
+  background-color: #0056b3;
+}
+
+/* App.css */
+
+/* Existing styles... */
+
+/* Projects.css */
+
+.projects {
+  max-width: 800px;
+  margin: 40px auto;
+}
+
+.projects-heading {
+  font-size: 2em;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.project-item {
+  background-color: #fff;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+
+.project-title {
+  font-size: 1.5em;
+  color: #333;
+}
+
+.project-description {
+  font-size: 1.2em;
+  color: #555;
+  margin-bottom: 10px;
+}
+
+.view-project-link {
+  display: inline-block;
+  background-color: #007BFF;
+  color: #fff;
+  padding: 8px 16px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-size: 1.1em;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.view-project-link:hover {
+  background-color: #0056b3;
+}
+
+
+/* Add more styles for other sections as needed */
