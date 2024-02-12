@@ -10,7 +10,7 @@ const AboutMe = React.forwardRef((props, ref) => {
         Hello! I'm Hersh, a passionate software developer based in Oregon. I hold a B.S. in Computer Science from the University of California, Santa Cruz.
       </p>
       <p>
-        My journey in the world of programming started with a fascination for creating things from scratch. Over the years, I've gained expertise in various technologies, including JavaScript, React, Node.js, and more.
+        My journey in the world of programming started with a fascination for creating things from scratch. Over the years, I've gained expertise in various technologies, including C/C++, Python, Java, JavaScript, React, Node.js, PostgreSQL and more.
       </p>
       <p>
         I thrive on turning complex problems into elegant solutions, and I'm always eager to learn new technologies and expand my skill set.

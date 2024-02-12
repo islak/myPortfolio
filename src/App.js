@@ -35,7 +35,7 @@ function App() {
       <div className="Landing">
         <div className="Landing-content">
           <h1>Hello, I'm Hersh!</h1>
-          <p>I'm a passionate Software Developer with a focus on backend development.</p>
+          <p>I'm a passionate Software Developer with a focus on backend development and data analysis.</p>
           <div className="social-buttons">
             <button className="github-button">
               <a href="https://github.com/islak" target="_blank" rel="noopener noreferrer">
