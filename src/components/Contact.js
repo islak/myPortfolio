@@ -4,7 +4,7 @@ const Contact = forwardRef((props, ref) => {
   return (
     <div className="contact" ref={ref}>
       <h2>Contact Me</h2>
-      <p>Feel free to reach out to me for any inquiries or just to say hi!</p>
+      <p>Feel free to reach out to me for any inquiries!</p>
       <form>
         <label htmlFor="name">Your Name:</label>
         <input type="text" id="name" name="name" required />
