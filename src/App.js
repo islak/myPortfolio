@@ -5,7 +5,7 @@ import Header from './components/Header';
 import AboutMe from './components/AboutMe';
 import Projects from './components/Projects';
 import Contact from './components/Contact';
-import { FaGithub, FaLinkedin } from 'react-icons/fa';
+import { FaGithub, FaLinkedin, FaYoutube } from 'react-icons/fa';
 import './App.css';
 
 function App() {
@@ -49,6 +49,11 @@ function App() {
                 
               </a>
             </button>
+            <button className="youtube-button">
+            <a href="https://www.youtube.com/@codeHyena/videos" target="_blank" rel="noopener noreferrer">
+              <FaYoutube size={20} />
+            </a>
+          </button>
           </div>
         </div>
       </div>

@@ -174,7 +174,7 @@ nav ul li a:hover {
 
 .contact input,
 .contact textarea {
-  width: 100%;
+  width: 90%;
   padding: 10px;
   border: 1px solid #ccc;
   border-radius: 5px;
@@ -212,6 +212,11 @@ nav ul li a:hover {
   font-size: 2em;
   color: #333;
   margin-bottom: 20px;
+}
+
+.projects h2 {
+  font-size: 2em;
+  color: #333;
 }
 
 .project-item {

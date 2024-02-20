@@ -16,8 +16,11 @@ const AboutMe = React.forwardRef((props, ref) => {
         I thrive on turning complex problems into elegant solutions, and I'm always eager to learn new technologies and expand my skill set.
       </p>
       <p>
-        Outside of coding, you'll find me exploring the latest tech trends, reading, and occasionally contributing to open-source projects.
+        Outside of coding, you'll find me exploring the latest tech trends, reading, and occasionally exploring open-source projects.
       </p>
+      <p>
+        Also, don't forget to check out my YouTube channel <a href="https://www.youtube.com/@codeHyena/videos" target="_blank">codeHyena</a>, where I upload daily videos solving problems in Python!
+    </p>
       </div>
     );
   });
