@@ -11,6 +11,7 @@ function Header({ scrollToAboutMe, scrollToProjects, scrollToContact }) {
           <li><button className="nav-button" onClick={scrollToAboutMe}>About Me</button></li>
           <li><button className="nav-button" onClick={scrollToProjects}>Projects</button></li>
           <li><button className="nav-button" onClick={scrollToContact}>Contact</button></li>
+          
         </ul>
       </nav>
     </header>

@@ -6,16 +6,29 @@ const Projects = forwardRef((props, ref) => {
       <h2>Projects</h2>
       <div className="project-item">
         <h3>Yelp Model</h3>
-        <p> Developed a sentiment analysis model for Yelp reviews using PyTorch and Hugging Face Transformers library. Utilized bert transformer model for pre-training, tokenization, and sentiment classification. Interpreted model by visualizing positive sentiments with Word Clouds using Matplotlib Technologies..</p>
+        <p>
+          Developed a sentiment analysis model for Yelp reviews using PyTorch and the Hugging Face Transformers library. Utilized the BERT transformer model for pre-training, tokenization, and sentiment classification. Visualized positive sentiments with Word Clouds using Matplotlib.
+        </p>
         <a href="https://github.com/islak/yelp-model" target="_blank" rel="noopener noreferrer">
           Source Code
         </a>
       </div>
       <div className="project-item">
         <h3>Vigenere Cipher Cryptanalysis</h3>
-        <p>A Python script is a cryptanalysis tool designed to aid in breaking XOR-based encryption. The script assumes that the text is encrypted using a repeating-key XOR cipher.</p>
+        <p>
+          Created a Python script for cryptanalysis of XOR-based encryption. Designed to break repeating-key XOR ciphers.
+        </p>
         <a href="https://github.com/islak/vigenere-cipher" target="_blank" rel="noopener noreferrer">
-        Source Code
+          Source Code
+        </a>
+      </div>
+      <div className="project-item">
+        <h3>Pet Shelter Scraping</h3>
+        <p>
+          Developed a python script using selenium to scrape data from shelter websites to analyze pet populations.
+        </p>
+        <a href="https://github.com/islak/pet-shelter-scraping" target="_blank" rel="noopener noreferrer">
+          Source Code
         </a>
       </div>
       {/* Add more project items as needed */}

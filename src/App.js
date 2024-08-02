@@ -6,6 +6,7 @@ import AboutMe from './components/AboutMe';
 import Projects from './components/Projects';
 import Contact from './components/Contact';
 import { FaGithub, FaLinkedin, FaYoutube } from 'react-icons/fa';
+
 import './App.css';
 
 function App() {
@@ -34,8 +35,8 @@ function App() {
       />
       <div className="Landing">
         <div className="Landing-content">
-          <h1>Hello, I'm Hersh!</h1>
-          <p>I'm a passionate Software Developer with a focus on backend development and data analysis.</p>
+          <h1>Hi, I'm Hersh!</h1>
+          <p>I'm a dedicated Software Developer with a focus on backend development and data analysis.</p>
           <div className="social-buttons">
             <button className="github-button">
               <a href="https://github.com/islak" target="_blank" rel="noopener noreferrer">
