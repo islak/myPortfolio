@@ -1,0 +1,103 @@
+body {
+    font-family: 'Courier New', Courier, monospace;
+    margin: 0;
+    padding: 0;
+    background: #f8f8f8;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; /* Changed to flex-start */
+    align-items: center;
+    height: 100vh; /* Keep this to allow scrolling */
+    overflow-y: auto; /* Enable vertical scrolling */
+    padding-top: 50px;
+    padding-bottom: 50px;
+    position: relative;
+}
+
+.portfolio-container {
+    text-align: center;
+    width: 80%;
+    max-width: 350px;
+    margin: 0 auto;
+    padding: 20px; /* Added padding */
+}
+
+h1 {
+    margin: 0;
+    font-size: 2em;
+    color: #ff69b4;
+    text-shadow: 1px 1px 2px #fff;
+    font-weight: 300;
+}
+
+.dynamic-text {
+    font-size: 1em;
+    color: #555;
+    margin: 10px 0;
+    height: 1.2em;
+    overflow: hidden;
+}
+
+.about-me {
+    font-size: 0.9em;
+    color: #666;
+    margin: 10px 0;
+}
+
+.links {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 15px;
+}
+
+a {
+    text-decoration: none;
+    font-size: 1.5em;
+    transition: color 0.3s;
+}
+
+.fab.fa-github {
+    color: #333; /* GitHub color */
+}
+
+.fab.fa-youtube {
+    color: #FF0000; /* YouTube color */
+}
+
+.fab.fa-linkedin {
+    color: #0077B5; /* LinkedIn color */
+}
+
+.fas.fa-envelope {
+    color: #777; /* Email color */
+}
+
+a:hover {
+    color: #ff1493;
+}
+
+footer {
+    margin-top: auto;
+    font-size: 0.9em;
+    color: #777;
+    text-align: center;
+    padding: 10px;
+}
+
+.star {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background-color: transparent;
+    color: gold;
+    font-size: 20px;
+    pointer-events: none;
+    transition: transform 0.3s ease;
+}
+
+.dendrogram {
+    width: 50%;          /* Full width */
+    height: 400px;       /* Adjust height as needed */
+    margin-top: 20px;    /* Add margin to separate it from other elements */
+}

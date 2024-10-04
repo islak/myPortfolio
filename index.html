@@ -5,90 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hersh Kalsi's Portfolio</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <style>
-        body {
-            font-family: 'Courier New', Courier, monospace;
-            margin: 0;
-            padding: 0;
-            background: #f8f8f8;
-            color: #333;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            overflow: hidden;
-            padding-top: 50px;
-            padding-bottom: 50px;
-            position: relative;
-        }
-        .portfolio-container {
-            background: linear-gradient(135deg, #ffe4e1, #f0f8ff);
-            padding: 20px;
-            text-align: center;
-            width: 80%;
-            max-width: 350px;
-            border: 2px solid #e1bee7;
-            box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
-            transition: box-shadow 0.3s ease;
-            position: relative;
-            border-radius: 10px;
-            margin: 0 auto;
-        }
-        .portfolio-container:hover {
-            box-shadow: 0 8px 24px rgba(0, 0, 0, 0.5);
-        }
-        h1 {
-            margin: 0;
-            font-size: 2em;
-            color: #ff69b4;
-            text-shadow: 1px 1px 2px #fff;
-            font-weight: 300;
-        }
-        .dynamic-text {
-            font-size: 1em;
-            color: #555;
-            margin: 10px 0;
-            height: 1.2em;
-            overflow: hidden;
-        }
-        .about-me {
-            font-size: 0.9em;
-            color: #666;
-            margin: 10px 0;
-        }
-        .links {
-            display: flex;
-            justify-content: space-around;
-            margin-top: 15px;
-        }
-        a {
-            text-decoration: none;
-            color: #ff69b4;
-            font-size: 1.5em;
-            transition: color 0.3s;
-        }
-        a:hover {
-            color: #ff1493;
-        }
-        footer {
-            margin-top: auto;
-            font-size: 0.9em;
-            color: #777;
-            text-align: center;
-            padding: 10px;
-        }
-        .star {
-            position: absolute;
-            width: 20px;
-            height: 20px;
-            background-color: transparent;
-            color: gold;
-            font-size: 20px;
-            pointer-events: none;
-            transition: transform 0.3s ease;
-        }
-    </style>
+    <link rel="stylesheet" href="styles.css">
+<script src="https://d3js.org/d3.v7.min.js"></script>
+
 </head>
 <body>
 
@@ -96,7 +15,7 @@
     <h1>Hersh Kalsi</h1>
     <div class="dynamic-text" id="dynamicText"></div>
     <div class="about-me">
-        <p>Hi! I'm Hersh, a Engineer currently working on data reconfiguration for the Mission Control Center at NASA Johnson Space Center.</p>
+        <p>Hi! I'm Hersh, a Engineer currently working on data reconfiguration for the Mission Control Center at NASA Johnson Space Center. I hold a BS in Computer Science from UC Santa Cruz.</p>
     </div>
     <div class="links">
         <a href="https://github.com/islak" target="_blank"><i class="fab fa-github"></i></a>
@@ -105,28 +24,13 @@
         <a href="mailto:kalsi.hersh@gmail.com"><i class="fas fa-envelope"></i></a>
     </div>
 </div>
+<div class="dendrogram" id="dendrogram"></div> <!-- Dendrogram placeholder -->
 
 <footer>
     <p>&copy; 2024 Hersh Kalsi</p>
 </footer>
 
 <script>
-    const dynamicTextElement = document.getElementById('dynamicText');
-    const textToType = "Software/Systems Engineer";
-    let index = 0;
-
-    function typeText() {
-        if (index < textToType.length) {
-            dynamicTextElement.innerHTML += textToType.charAt(index);
-            index++;
-            setTimeout(typeText, 100);
-        }
-    }
-
-    window.onload = () => {
-        typeText();
-    };
-
     function createStar(x, y) {
         const star = document.createElement('div');
         star.className = 'star';
@@ -147,15 +51,7 @@
         createStar(event.clientX, event.clientY);
     });
 
-    document.addEventListener('mousemove', (event) => {
-        const { clientX, clientY } = event;
-        const { innerWidth, innerHeight } = window;
-        const xPercent = clientX / innerWidth;
-        const yPercent = clientY / innerHeight;
-        const gradient = `linear-gradient(${yPercent * 360}deg, #ffe4e1, #f0f8ff)`;
-        document.querySelector('.portfolio-container').style.background = gradient;
-    });
 </script>
-
+<script src="dendrogram.js"></script>
 </body>
 </html>
